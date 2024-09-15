@@ -12,10 +12,10 @@ function LoginButton({
   modal = 'redirect',
   asChild,
 }: LoginButtonProps) {
+  const router = useRouter();
   const handleClick = () => {
     router.push('/auth/login');
   };
-  const router = useRouter();
   if (modal === 'modal') {
     return <span>TODO</span>;
   }
